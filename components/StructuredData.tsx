@@ -9,8 +9,8 @@ export default function StructuredData() {
       "https://hifusomerset.co.uk",
       "https://www.amethystaestheticsbeauty.com/"
     ],
-    "logo": "https://hifusomerset.co.uk/images/logo.png",
-    "image": "https://hifusomerset.co.uk/images/hifu-treatment.jpeg",
+    "logo": "https://hifusomerset.co.uk/images/amethyst-logo.avif",
+    "image": "https://hifusomerset.co.uk/images/stunning-results-1-session-hifu-bf1.png",
     "description": "Award-finalist beauty salon in Somerset specializing in HIFU non-surgical facelift treatments led by Marianne. Non-invasive skin tightening, jowl lifting, and facial rejuvenation with zero downtime.",
     "address": {
       "@type": "PostalAddress",

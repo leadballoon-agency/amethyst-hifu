@@ -14,41 +14,33 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
 
   const results = [
     {
-      image: '/images/co2laser-skin-rejeuvenation.jpeg',
-      title: 'Skin Resurfacing',
-      description: 'Complete skin rejuvenation, renewal and tightening',
+      image: '/images/stunning-results-1-session-hifu-bf1.png',
+      title: 'Stunning Results',
+      description: 'Visible lifting after just 1 session',
       time: 'Results Vary',
       isAvailable: true,
       featured: true
     },
     {
-      image: '/images/Acne Scarring Before and After.jpeg',
-      title: 'Acne Scarring',
-      description: 'Dramatic improvement in skin texture',
+      image: '/images/hifu-bf-4-full-face.png',
+      title: 'Full Face Lift',
+      description: 'Complete facial lifting and tightening',
       time: 'Results Vary',
       isAvailable: true,
       featured: false
     },
     {
-      image: '/images/graeme.png',
-      title: 'Baggy Eye',
-      description: 'Effective results for men and women',
+      image: '/images/nasolabial-folds-hifu-2.png',
+      title: 'Nasolabial Folds',
+      description: 'Reduce smile lines and sagging',
       time: 'Results Vary',
       isAvailable: true,
       featured: false
     },
     {
-      image: '/images/stretch marks.jpeg',
-      title: 'Stretch Marks',
-      description: 'Significant reduction in appearance',
-      time: 'Results Vary',
-      isAvailable: true,
-      featured: false
-    },
-    {
-      image: '/images/pigmentation2.png',
-      title: 'Pigmentation',
-      description: 'Even skin tone restoration',
+      image: '/images/hifu-bf3.jpeg',
+      title: 'Jowl Lifting',
+      description: 'Define your jawline naturally',
       time: 'Results Vary',
       isAvailable: true,
       featured: false
@@ -97,7 +89,7 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
                 </div>
 
                 {/* Card Content */}
-                <div className="aspect-square flex flex-col items-center justify-center text-center text-white p-6 sm:p-8">
+                <div className="aspect-[4/3] flex flex-col items-center justify-center text-center text-white p-6 sm:p-8">
                   {/* Camera Icon */}
                   <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white/20 backdrop-blur rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
                     <svg className="w-8 h-8 sm:w-10 sm:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,7 +142,7 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
                 </div>
 
                 {/* Image Container */}
-                <div className={`relative overflow-hidden ${result.featured ? 'aspect-video' : 'aspect-square'}`}>
+                <div className={`relative overflow-hidden ${result.featured ? 'aspect-video' : 'aspect-[4/3]'}`}>
                   <img
                     src={result.image}
                     alt={result.title}
@@ -192,7 +184,7 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
                   Welcome to Amethyst Aesthetics Beauty
                 </h3>
                 <p className="text-white/90 text-sm sm:text-base mb-4 sm:mb-6">
-                  Step into our award-finalist beauty salon in South Petherton, Somerset, designed for your comfort during your CO2 laser treatment journey.
+                  Step into our award-finalist beauty salon in South Petherton, Somerset, designed for your comfort during your HIFU treatment journey.
                 </p>
                 <button
                   onClick={onBookingClick}

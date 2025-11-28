@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     images: [
       {
-        url: '/images/hifu-treatment.jpeg',
+        url: 'https://hifusomerset.co.uk/images/stunning-results-1-session-hifu-bf1.png',
         width: 1200,
-        height: 675,
+        height: 630,
         alt: 'BLACK FRIDAY - HIFU Non-Surgical Facelift Before and After Results - Amethyst Aesthetics Beauty Somerset',
       },
     ],
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'BLACK FRIDAY: HIFU Treatment Somerset £299 | Amethyst Aesthetics Beauty',
     description: 'BLACK FRIDAY SPECIAL! Non-surgical facelift with HIFU. Just £299 (normally £395 - Save £96!). Lift & tighten without surgery. No downtime. Klarna available.',
-    images: ['/images/hifu-treatment.jpeg'],
+    images: ['https://hifusomerset.co.uk/images/stunning-results-1-session-hifu-bf1.png'],
   },
   robots: {
     index: true,
