@@ -9,9 +9,9 @@ import ConvertBox from '@/components/ConvertBox'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'BLACK FRIDAY: HIFU Treatment Somerset £299 - Non-Surgical Facelift | Amethyst Aesthetics Beauty',
-  description: 'BLACK FRIDAY SPECIAL! Non-surgical facelift with HIFU at Amethyst Aesthetics Beauty, South Petherton. Just £299 (normally £395 - Save £96!). Lift, tighten & rejuvenate without surgery. Award-finalist clinic with experienced practitioners. No downtime. Klarna available.',
-  keywords: 'HIFU Somerset, Black Friday HIFU, non-surgical facelift Somerset, HIFU treatment, skin tightening Somerset, face lift without surgery, Amethyst Aesthetics Beauty, Marianne aesthetics, South Petherton aesthetics, Somerset aesthetics, HIFU UK, ultrasound facelift, jowl lifting Somerset, Yeovil aesthetics, HIFU deals, neck tightening',
+  title: 'HIFU Treatment Somerset From £400 - Non-Surgical Facelift | Amethyst Aesthetics Beauty',
+  description: 'Non-surgical facelift with HIFU at Amethyst Aesthetics Beauty, South Petherton. Chin & Neck £400, Full Face £600, The Works £800. Lift, tighten & rejuvenate without surgery. Award-finalist clinic with experienced practitioners. No downtime. Klarna available.',
+  keywords: 'HIFU Somerset, non-surgical facelift Somerset, HIFU treatment, skin tightening Somerset, face lift without surgery, Amethyst Aesthetics Beauty, Marianne aesthetics, South Petherton aesthetics, Somerset aesthetics, HIFU UK, ultrasound facelift, jowl lifting Somerset, Yeovil aesthetics, neck tightening, chin tightening',
   authors: [{ name: 'Amethyst Aesthetics Beauty' }],
   creator: 'Amethyst Aesthetics Beauty',
   publisher: 'Amethyst Aesthetics Beauty',
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     canonical: 'https://hifusomerset.co.uk',
   },
   openGraph: {
-    title: 'BLACK FRIDAY: HIFU Treatment Somerset £299 - Save £96! | Amethyst Aesthetics Beauty',
-    description: 'BLACK FRIDAY SPECIAL! Non-surgical facelift with HIFU. Just £299 (normally £395 - Save £96!). Lift, tighten & rejuvenate without surgery or downtime. Award-finalist Somerset clinic. Klarna available.',
+    title: 'HIFU Treatment Somerset From £400 - Non-Surgical Facelift | Amethyst Aesthetics Beauty',
+    description: 'Non-surgical facelift with HIFU. Chin & Neck £400, Full Face £600, The Works £800. Lift, tighten & rejuvenate without surgery or downtime. Award-finalist Somerset clinic. Klarna available.',
     url: 'https://hifusomerset.co.uk',
     siteName: 'Amethyst Aesthetics Beauty - HIFU Somerset',
     type: 'website',
@@ -36,14 +36,14 @@ export const metadata: Metadata = {
         url: 'https://hifusomerset.co.uk/images/stunning-results-1-session-hifu-bf1.png',
         width: 1200,
         height: 630,
-        alt: 'BLACK FRIDAY - HIFU Non-Surgical Facelift Before and After Results - Amethyst Aesthetics Beauty Somerset',
+        alt: 'HIFU Non-Surgical Facelift Before and After Results - Amethyst Aesthetics Beauty Somerset',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BLACK FRIDAY: HIFU Treatment Somerset £299 | Amethyst Aesthetics Beauty',
-    description: 'BLACK FRIDAY SPECIAL! Non-surgical facelift with HIFU. Just £299 (normally £395 - Save £96!). Lift & tighten without surgery. No downtime. Klarna available.',
+    title: 'HIFU Treatment Somerset From £400 | Amethyst Aesthetics Beauty',
+    description: 'Non-surgical facelift with HIFU. Chin & Neck £400, Full Face £600, The Works £800. Lift & tighten without surgery. No downtime. Klarna available.',
     images: ['https://hifusomerset.co.uk/images/stunning-results-1-session-hifu-bf1.png'],
   },
   robots: {

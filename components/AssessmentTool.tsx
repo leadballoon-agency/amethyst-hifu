@@ -84,44 +84,52 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
     const laxity = assessmentAnswers[2]
     const ageRange = assessmentAnswers[3]
 
-    // Face & Neck for significant concerns or neck-specific
-    if (concern === 'neck' || laxity === 'significant' || (concern === 'fullface' && ageRange === '55+')) {
+    // The Works for significant concerns or full face + neck
+    if (laxity === 'significant' || (concern === 'fullface' && (concern === 'neck' || ageRange === '55+'))) {
       return {
-        treatment: 'Face & Neck HIFU',
-        price: '£399',
-        description: 'Complete face and neck treatment for maximum lifting. Targets jowls, jawline, and turkey neck for comprehensive rejuvenation.',
+        treatment: 'The Works',
+        price: '£800',
+        description: 'Complete face and neck treatment for maximum lifting. Includes full face plus chin & neck for comprehensive rejuvenation.',
         isSuitable: true
       }
     }
 
-    // Full Face HIFU - BLACK FRIDAY deal for most cases
+    // Chin & Neck for neck-specific concerns
+    if (concern === 'neck') {
+      return {
+        treatment: 'Chin & Neck HIFU',
+        price: '£400',
+        description: 'Targeted treatment for sagging jowls and turkey neck. Tightens loose skin and defines the jawline.',
+        isSuitable: true
+      }
+    }
+
+    // Full Face HIFU for most cases
     if (concern === 'jowls' || concern === 'cheeks' || concern === 'fullface' || laxity === 'moderate') {
       return {
         treatment: 'Full Face HIFU',
-        price: '£299',
-        description: 'BLACK FRIDAY SPECIAL! Full face treatment normally £395. Lifts jowls, tightens cheeks, and defines jawline. Save £96!',
-        isSuitable: true,
-        isBlackFriday: true
-      }
-    }
-
-    // Targeted treatment for specific areas
-    if (concern === 'brows' || concern === 'prevention' || laxity === 'mild') {
-      return {
-        treatment: 'Targeted Area HIFU',
-        price: 'From £149',
-        description: 'Perfect for specific areas or preventative treatment. Quick session focusing on your main concern with visible lifting results.',
+        price: '£600',
+        description: 'Our most popular treatment. Lifts jowls, tightens cheeks, and defines jawline for a natural facelift effect.',
         isSuitable: true
       }
     }
 
-    // Default to Black Friday deal
+    // Chin & Neck for preventative or mild concerns
+    if (concern === 'brows' || concern === 'prevention' || laxity === 'mild') {
+      return {
+        treatment: 'Chin & Neck HIFU',
+        price: '£400',
+        description: 'Perfect for early signs of sagging or preventative treatment. Target specific areas with visible lifting results.',
+        isSuitable: true
+      }
+    }
+
+    // Default to Full Face
     return {
       treatment: 'Full Face HIFU',
-      price: '£299',
-      description: 'BLACK FRIDAY SPECIAL! Our most popular treatment at a special price. Lift and tighten your entire face. Save £96!',
-      isSuitable: true,
-      isBlackFriday: true
+      price: '£600',
+      description: 'Our most popular treatment. Lift and tighten your entire face for a natural, refreshed appearance.',
+      isSuitable: true
     }
   }
 
@@ -194,25 +202,14 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
                 Your Perfect HIFU Treatment
               </h3>
 
-              <div className={`rounded-xl sm:rounded-2xl p-6 sm:p-8 mb-4 sm:mb-6 border-2 ${
-                getRecommendation().isBlackFriday
-                  ? 'bg-gradient-to-br from-neutral-900 to-black border-amber-400'
-                  : 'bg-gradient-to-br from-primary-50 to-white border-primary-100'
-              }`}>
-                <h4 className={`text-lg sm:text-xl font-bold mb-2 ${
-                  getRecommendation().isBlackFriday ? 'text-amber-400' : 'text-primary-600'
-                }`}>
+              <div className="rounded-xl sm:rounded-2xl p-6 sm:p-8 mb-4 sm:mb-6 border-2 bg-gradient-to-br from-primary-50 to-white border-primary-100">
+                <h4 className="text-lg sm:text-xl font-bold mb-2 text-primary-600">
                   {getRecommendation().treatment}
-                  {getRecommendation().isBlackFriday && <span className="ml-2 text-xs">✦ BLACK FRIDAY</span>}
                 </h4>
-                <p className={`text-2xl sm:text-3xl font-bold mb-2 sm:mb-3 ${
-                  getRecommendation().isBlackFriday ? 'text-white' : 'gradient-text'
-                }`}>
+                <p className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-3 gradient-text">
                   {getRecommendation().price}
                 </p>
-                <p className={`text-sm sm:text-base leading-relaxed ${
-                  getRecommendation().isBlackFriday ? 'text-neutral-300' : 'text-neutral-600'
-                }`}>
+                <p className="text-sm sm:text-base leading-relaxed text-neutral-600">
                   {getRecommendation().description}
                 </p>
               </div>

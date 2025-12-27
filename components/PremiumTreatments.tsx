@@ -7,37 +7,34 @@ interface PremiumTreatmentsProps {
 export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsProps) {
   const treatments = [
     {
-      icon: '✦',
-      title: 'Full Face HIFU',
-      description: 'BLACK FRIDAY - Complete facial lifting',
-      features: ['Full face treatment', 'Lifts jowls & cheeks', 'No downtime required', 'Klarna available'],
-      price: '£299',
-      oldPrice: '£395',
-      gradient: 'from-amber-400 to-amber-600',
-      popular: true,
-      badge: 'BLACK FRIDAY',
-      isBlackFriday: true
-    },
-    {
       icon: '✨',
-      title: 'Face, Neck, Arms & Tummy',
-      description: 'Complete body lifting package',
-      features: ['Full face + neck', 'Arms & tummy included', 'Maximum results', 'Klarna available'],
-      price: '£599',
+      title: 'Chin & Neck',
+      description: 'Target sagging jowls and neck',
+      features: ['Chin & neck treatment', 'Tightens loose skin', 'No downtime required', 'Klarna available'],
+      price: '£400',
       gradient: 'from-primary-400 to-primary-600',
       popular: false,
-      badge: 'BEST VALUE'
+      badge: 'POPULAR'
+    },
+    {
+      icon: '✦',
+      title: 'Full Face',
+      description: 'Complete facial lifting treatment',
+      features: ['Full face treatment', 'Lifts jowls & cheeks', 'No downtime required', 'Klarna available'],
+      price: '£600',
+      gradient: 'from-primary-500 to-primary-700',
+      popular: true,
+      badge: 'MOST POPULAR'
     },
     {
       icon: '💎',
-      title: 'Course of 3 Face Treatments',
-      description: 'Ultimate transformation package',
-      features: ['3 full face sessions', 'Optimal results', 'Save £97', 'Spaced for best results'],
-      price: '£900',
-      oldPrice: '£897',
+      title: 'The Works',
+      description: 'Full face plus chin & neck',
+      features: ['Full face + chin & neck', 'Maximum lifting results', 'Complete transformation', 'Klarna available'],
+      price: '£800',
       gradient: 'from-green-400 to-emerald-600',
       popular: false,
-      badge: 'SAVE £97'
+      badge: 'BEST VALUE'
     }
   ]
 
@@ -66,10 +63,10 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
               {treatment.badge && (
                 <div className={`absolute -top-2 sm:-top-3 left-1/2 -translate-x-1/2 ${
                   treatment.badge === 'BEST VALUE'
+                    ? 'bg-gradient-to-r from-emerald-500 to-emerald-600 text-white'
+                    : treatment.badge === 'MOST POPULAR'
                     ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white'
-                    : treatment.badge === 'BLACK FRIDAY'
-                    ? 'bg-black border border-amber-400 text-amber-400'
-                    : 'bg-gradient-to-r from-emerald-500 to-emerald-600 text-white'
+                    : 'bg-gradient-to-r from-primary-400 to-primary-500 text-white'
                 } px-3 sm:px-4 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm font-medium`}>
                   {treatment.badge}
                 </div>

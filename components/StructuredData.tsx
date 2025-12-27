@@ -40,41 +40,30 @@ export default function StructuredData() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Full Face HIFU - BLACK FRIDAY",
-            "description": "Complete facial HIFU treatment for lifting and tightening. BLACK FRIDAY Special - normally £395!"
+            "name": "Chin & Neck HIFU",
+            "description": "HIFU treatment targeting sagging jowls and neck for a more defined jawline"
           },
-          "price": "299",
-          "priceCurrency": "GBP",
-          "priceValidUntil": "2025-11-30"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Face, Neck, Arms & Tummy HIFU",
-            "description": "Complete HIFU treatment package for face, neck, arms and tummy"
-          },
-          "price": "599",
+          "price": "400",
           "priceCurrency": "GBP"
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Course of 3 Face Treatments",
-            "description": "Three full face HIFU sessions for optimal results"
+            "name": "Full Face HIFU",
+            "description": "Complete facial HIFU treatment for lifting and tightening"
           },
-          "price": "900",
+          "price": "600",
           "priceCurrency": "GBP"
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Body HIFU",
-            "description": "HIFU treatment for body areas - arms, tummy, and more"
+            "name": "The Works HIFU",
+            "description": "Full face plus chin and neck HIFU for maximum lifting results"
           },
-          "price": "299",
+          "price": "800",
           "priceCurrency": "GBP"
         }
       ]
@@ -252,32 +241,24 @@ export default function StructuredData() {
       "itemListElement": [
         {
           "@type": "Offer",
-          "name": "Full Face HIFU - BLACK FRIDAY",
-          "price": "299",
+          "name": "Chin & Neck HIFU",
+          "price": "400",
           "priceCurrency": "GBP",
-          "priceValidUntil": "2025-11-30",
-          "description": "Complete facial HIFU treatment for lifting and tightening. BLACK FRIDAY Special - normally £395!"
+          "description": "HIFU treatment targeting sagging jowls and neck for a more defined jawline"
         },
         {
           "@type": "Offer",
-          "name": "Face, Neck, Arms & Tummy HIFU",
-          "price": "599",
+          "name": "Full Face HIFU",
+          "price": "600",
           "priceCurrency": "GBP",
-          "description": "Complete HIFU treatment package for face, neck, arms and tummy"
+          "description": "Complete facial HIFU treatment for lifting and tightening"
         },
         {
           "@type": "Offer",
-          "name": "Course of 3 Face Treatments",
-          "price": "900",
+          "name": "The Works HIFU",
+          "price": "800",
           "priceCurrency": "GBP",
-          "description": "Three full face HIFU sessions for optimal results"
-        },
-        {
-          "@type": "Offer",
-          "name": "Body HIFU",
-          "price": "299",
-          "priceCurrency": "GBP",
-          "description": "HIFU treatment for body areas - arms, tummy, and more"
+          "description": "Full face plus chin and neck HIFU for maximum lifting results"
         }
       ]
     }
