@@ -6,6 +6,30 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 HIFU (High-Intensity Focused Ultrasound) non-surgical facelift landing page for Amethyst Aesthetics Beauty. Built with Next.js 15 App Router, TypeScript, and Tailwind CSS. Domain: hifusomerset.co.uk
 
+## Current Pricing (Updated Dec 2024)
+
+| Treatment | Price |
+|-----------|-------|
+| Chin & Neck | £400 |
+| Full Face | £600 |
+| The Works (Face + Neck) | £800 |
+
+- **Consultation**: £25 (redeemable against treatment cost)
+- **Payment**: Klarna available (pay in 3 instalments)
+
+## Business Details
+
+- **Business**: Amethyst Aesthetics Beauty
+- **Location**: Unit 2, Old Apple Store, New Cross Hill, South Petherton, TA13 5HV
+- **Phone**: 07366 904007
+- **Email**: Ismaymarianne@gmail.com
+- **Practitioner**: Marianne (4+ years experience, award-finalist)
+
+## Tracking
+
+- **Meta Pixel ID**: 25676494561954301
+- **Deployment**: Vercel
+
 ## Development Commands
 
 ```bash
@@ -78,3 +102,46 @@ The repo includes automation for batch clinic deployments:
 - `deployment-automation.js` - Vercel/Netlify deployment
 
 Run with: `FIRECRAWL_API_KEY=xxx node clinic-automation-agent.js --url https://clinic-site.com`
+
+## Facebook Ad Copy (Current)
+
+### Headline
+```
+Jowls Making You Look Older?
+```
+
+### Primary Text (Short Description)
+```
+Tired of sagging jowls staring back at you? HIFU lifts & tightens in just one session. No surgery. No downtime. Real results.
+```
+
+### Ad Copy (Full Description)
+```
+Still covering your neck in photos?
+
+You're not alone. Sagging jowls and loose neck skin affect thousands of women — but surgery isn't the only answer.
+
+HIFU uses focused ultrasound to lift and tighten from within. One session. No needles. No downtime. Results that last 1-2 years.
+
+Choose Your Transformation:
+✨ Chin & Neck — £400
+✦ Full Face — £600 ⭐ Most Popular
+💎 The Works — £800 (Best Value)
+
+✅ Walk in. Walk out. Get back to life.
+✅ Results continue improving for months
+✅ 800+ treatments completed
+✅ Pay monthly with Klarna
+
+📍 South Petherton, Somerset
+
+£25 consultation (redeemable against treatment)
+
+See real before & afters → hifusomerset.co.uk
+```
+
+### Alternative Headlines
+- `Hate Your Neck in Photos?`
+- `The 60-Minute Age Reversal`
+- `Tight Skin. No Surgery. One Session.`
+- `When Did Your Jawline Disappear?`
