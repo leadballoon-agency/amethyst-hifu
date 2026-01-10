@@ -40,18 +40,14 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
             {/* Special Offer Box */}
             <div className="bg-gradient-to-r from-primary-50 to-primary-100 border-2 border-primary-500 rounded-2xl p-5 sm:p-6 mx-auto lg:mx-0 max-w-xl shadow-lg">
               <p className="text-primary-600 font-bold text-xs sm:text-base mb-3">LIMITED TIME OFFER</p>
-              <div className="grid grid-cols-3 gap-2 sm:gap-3">
-                <div className="text-center bg-white rounded-xl p-2 sm:p-4 shadow-sm">
-                  <p className="text-xl sm:text-3xl font-bold text-primary-600 mb-1">£400</p>
-                  <p className="text-xs sm:text-sm text-neutral-600 font-medium">Chin & Neck</p>
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="text-center bg-white rounded-xl p-3 sm:p-5 shadow-sm">
+                  <p className="text-2xl sm:text-3xl font-bold text-primary-600 mb-1">£195</p>
+                  <p className="text-xs sm:text-sm text-neutral-600 font-medium">Jawline Lift</p>
                 </div>
-                <div className="text-center bg-white rounded-xl p-2 sm:p-4 shadow-sm">
-                  <p className="text-xl sm:text-3xl font-bold text-primary-600 mb-1">£600</p>
-                  <p className="text-xs sm:text-sm text-neutral-600 font-medium">Full Face</p>
-                </div>
-                <div className="text-center bg-primary-600 rounded-xl p-2 sm:p-4 shadow-md">
-                  <p className="text-xl sm:text-3xl font-bold text-white mb-1">£800</p>
-                  <p className="text-xs sm:text-sm text-white font-medium">The Works</p>
+                <div className="text-center bg-primary-600 rounded-xl p-3 sm:p-5 shadow-md">
+                  <p className="text-2xl sm:text-3xl font-bold text-white mb-1">£395</p>
+                  <p className="text-xs sm:text-sm text-white font-medium">Full Face</p>
                 </div>
               </div>
               <p className="text-xs sm:text-sm text-neutral-600 mt-3 sm:mt-4 text-center font-medium">Pay Monthly with Klarna • No Downtime Required</p>

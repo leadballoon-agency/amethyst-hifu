@@ -8,32 +8,22 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
   const treatments = [
     {
       icon: '✨',
-      title: 'Chin & Neck',
-      description: 'Target sagging jowls and neck',
-      features: ['Chin & neck treatment', 'Tightens loose skin', 'No downtime required', 'Klarna available'],
-      price: '£400',
+      title: 'Jawline Lift',
+      description: 'Define & sculpt your jawline',
+      features: ['Jawline sculpting', 'Tightens loose skin', 'No downtime required', 'Klarna available'],
+      price: '£195',
       gradient: 'from-primary-400 to-primary-600',
       popular: false,
-      badge: 'POPULAR'
-    },
-    {
-      icon: '✦',
-      title: 'Full Face',
-      description: 'Complete facial lifting treatment',
-      features: ['Full face treatment', 'Lifts jowls & cheeks', 'No downtime required', 'Klarna available'],
-      price: '£600',
-      gradient: 'from-primary-500 to-primary-700',
-      popular: true,
-      badge: 'MOST POPULAR'
+      badge: 'SPECIAL OFFER'
     },
     {
       icon: '💎',
-      title: 'The Works',
-      description: 'Full face plus chin & neck',
-      features: ['Full face + chin & neck', 'Maximum lifting results', 'Complete transformation', 'Klarna available'],
-      price: '£800',
-      gradient: 'from-green-400 to-emerald-600',
-      popular: false,
+      title: 'Full Face',
+      description: 'Complete facial lifting treatment',
+      features: ['Full face treatment', 'Lifts jowls & cheeks', 'No downtime required', 'Klarna available'],
+      price: '£395',
+      gradient: 'from-primary-500 to-primary-700',
+      popular: true,
       badge: 'BEST VALUE'
     }
   ]
@@ -52,7 +42,7 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-3xl mx-auto">
           {treatments.map((treatment, index) => (
             <div
               key={index}

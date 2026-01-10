@@ -84,51 +84,41 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
     const laxity = assessmentAnswers[2]
     const ageRange = assessmentAnswers[3]
 
-    // The Works for significant concerns or full face + neck
-    if (laxity === 'significant' || (concern === 'fullface' && (concern === 'neck' || ageRange === '55+'))) {
-      return {
-        treatment: 'The Works',
-        price: '£800',
-        description: 'Complete face and neck treatment for maximum lifting. Includes full face plus chin & neck for comprehensive rejuvenation.',
-        isSuitable: true
-      }
-    }
-
-    // Chin & Neck for neck-specific concerns
-    if (concern === 'neck') {
-      return {
-        treatment: 'Chin & Neck HIFU',
-        price: '£400',
-        description: 'Targeted treatment for sagging jowls and turkey neck. Tightens loose skin and defines the jawline.',
-        isSuitable: true
-      }
-    }
-
-    // Full Face HIFU for most cases
-    if (concern === 'jowls' || concern === 'cheeks' || concern === 'fullface' || laxity === 'moderate') {
+    // Full Face HIFU for significant concerns or multiple areas
+    if (laxity === 'significant' || concern === 'fullface' || (concern === 'jowls' && laxity === 'moderate')) {
       return {
         treatment: 'Full Face HIFU',
-        price: '£600',
-        description: 'Our most popular treatment. Lifts jowls, tightens cheeks, and defines jawline for a natural facelift effect.',
+        price: '£395',
+        description: 'Our best value treatment. Complete facial lifting that targets jowls, cheeks, and overall facial sagging for maximum results.',
         isSuitable: true
       }
     }
 
-    // Chin & Neck for preventative or mild concerns
-    if (concern === 'brows' || concern === 'prevention' || laxity === 'mild') {
+    // Full Face for cheeks or moderate laxity
+    if (concern === 'cheeks' || laxity === 'moderate') {
       return {
-        treatment: 'Chin & Neck HIFU',
-        price: '£400',
-        description: 'Perfect for early signs of sagging or preventative treatment. Target specific areas with visible lifting results.',
+        treatment: 'Full Face HIFU',
+        price: '£395',
+        description: 'Complete facial HIFU treatment. Lifts jowls, tightens cheeks, and defines jawline for a natural facelift effect.',
         isSuitable: true
       }
     }
 
-    // Default to Full Face
+    // Jawline Lift for targeted concerns
+    if (concern === 'jowls' || concern === 'neck' || concern === 'brows' || concern === 'prevention' || laxity === 'mild') {
+      return {
+        treatment: 'Jawline Lift HIFU',
+        price: '£195',
+        description: 'Perfect for defining and sculpting your jawline. Target sagging jowls with visible lifting results.',
+        isSuitable: true
+      }
+    }
+
+    // Default to Jawline Lift
     return {
-      treatment: 'Full Face HIFU',
-      price: '£600',
-      description: 'Our most popular treatment. Lift and tighten your entire face for a natural, refreshed appearance.',
+      treatment: 'Jawline Lift HIFU',
+      price: '£195',
+      description: 'Define and sculpt your jawline with our targeted HIFU treatment for a more youthful appearance.',
       isSuitable: true
     }
   }

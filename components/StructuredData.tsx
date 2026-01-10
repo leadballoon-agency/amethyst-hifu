@@ -40,10 +40,10 @@ export default function StructuredData() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Chin & Neck HIFU",
-            "description": "HIFU treatment targeting sagging jowls and neck for a more defined jawline"
+            "name": "Jawline Lift HIFU",
+            "description": "HIFU treatment to define and sculpt the jawline with visible lifting results"
           },
-          "price": "400",
+          "price": "195",
           "priceCurrency": "GBP"
         },
         {
@@ -51,19 +51,9 @@ export default function StructuredData() {
           "itemOffered": {
             "@type": "Service",
             "name": "Full Face HIFU",
-            "description": "Complete facial HIFU treatment for lifting and tightening"
+            "description": "Complete facial HIFU treatment for lifting jowls, cheeks and overall facial tightening"
           },
-          "price": "600",
-          "priceCurrency": "GBP"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "The Works HIFU",
-            "description": "Full face plus chin and neck HIFU for maximum lifting results"
-          },
-          "price": "800",
+          "price": "395",
           "priceCurrency": "GBP"
         }
       ]
@@ -241,24 +231,17 @@ export default function StructuredData() {
       "itemListElement": [
         {
           "@type": "Offer",
-          "name": "Chin & Neck HIFU",
-          "price": "400",
+          "name": "Jawline Lift HIFU",
+          "price": "195",
           "priceCurrency": "GBP",
-          "description": "HIFU treatment targeting sagging jowls and neck for a more defined jawline"
+          "description": "HIFU treatment to define and sculpt the jawline with visible lifting results"
         },
         {
           "@type": "Offer",
           "name": "Full Face HIFU",
-          "price": "600",
+          "price": "395",
           "priceCurrency": "GBP",
-          "description": "Complete facial HIFU treatment for lifting and tightening"
-        },
-        {
-          "@type": "Offer",
-          "name": "The Works HIFU",
-          "price": "800",
-          "priceCurrency": "GBP",
-          "description": "Full face plus chin and neck HIFU for maximum lifting results"
+          "description": "Complete facial HIFU treatment for lifting jowls, cheeks and overall facial tightening"
         }
       ]
     }

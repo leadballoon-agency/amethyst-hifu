@@ -341,32 +341,32 @@ export default function AssessmentModal({ isOpen, onClose, initialData }: Assess
     if (downtime === 'none' && budget === '2000+') {
       return {
         treatment: 'HIFU Skin Tightening',
-        price: '£800 - £1,200',
-        description: 'No downtime, high-end treatment perfect for your skin type. Non-invasive ultrasound technology for lifting and tightening.',
+        price: '£195 - £395',
+        description: 'No downtime treatment perfect for your skin type. Non-invasive ultrasound technology for lifting and tightening.',
         isSuitable: false,
         fitzType: result
       }
     } else if (downtime === 'none' || downtime === '1-3') {
       return {
-        treatment: 'RF Microneedling',
-        price: '£600 - £900',
-        description: 'Minimal downtime treatment that combines radiofrequency with microneedling. Safe and effective for darker skin tones.',
+        treatment: 'HIFU Jawline Lift',
+        price: '£195',
+        description: 'Minimal downtime treatment. Non-invasive ultrasound for jawline sculpting. Safe and effective for all skin tones.',
         isSuitable: false,
         fitzType: result
       }
     } else if (budget === '200-500' || budget === '500-1000') {
       return {
-        treatment: 'Chemical Peel (TCA)',
-        price: '£250 - £500',
-        description: 'Cost-effective treatment specially formulated for darker skin tones. Addresses pigmentation and texture concerns safely.',
+        treatment: 'HIFU Full Face',
+        price: '£395',
+        description: 'Complete facial HIFU treatment for lifting and tightening. Addresses sagging and facial concerns effectively.',
         isSuitable: false,
         fitzType: result
       }
     } else {
       return {
-        treatment: 'Microneedling with PRF',
-        price: '£400 - £700',
-        description: 'Uses your own growth factors for natural healing. Safe and effective for all skin types with moderate downtime.',
+        treatment: 'HIFU Jawline Lift',
+        price: '£195',
+        description: 'Define and sculpt your jawline with our targeted HIFU treatment. Safe and effective for all skin types.',
         isSuitable: false,
         fitzType: result
       }

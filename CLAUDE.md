@@ -6,13 +6,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 HIFU (High-Intensity Focused Ultrasound) non-surgical facelift landing page for Amethyst Aesthetics Beauty. Built with Next.js 15 App Router, TypeScript, and Tailwind CSS. Domain: hifusomerset.co.uk
 
-## Current Pricing (Updated Dec 2024)
+## Current Pricing (Updated Jan 2025)
 
 | Treatment | Price |
 |-----------|-------|
-| Chin & Neck | £400 |
-| Full Face | £600 |
-| The Works (Face + Neck) | £800 |
+| Jawline Lift | £195 |
+| Full Face | £395 |
 
 - **Consultation**: £25 (redeemable against treatment cost)
 - **Payment**: Klarna available (pay in 3 instalments)
@@ -124,9 +123,8 @@ You're not alone. Sagging jowls and loose neck skin affect thousands of women �
 HIFU uses focused ultrasound to lift and tighten from within. One session. No needles. No downtime. Results that last 1-2 years.
 
 Choose Your Transformation:
-✨ Chin & Neck — £400
-✦ Full Face — £600 ⭐ Most Popular
-💎 The Works — £800 (Best Value)
+✨ Jawline Lift — £195 (Special Offer)
+💎 Full Face — £395 (Best Value)
 
 ✅ Walk in. Walk out. Get back to life.
 ✅ Results continue improving for months
