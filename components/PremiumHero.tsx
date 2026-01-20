@@ -107,7 +107,7 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
                 className="rounded-2xl shadow-xl w-full"
               >
                 <source
-                  src="https://storage.googleapis.com/msgsndr/yE0ZTtTwqOwpiUubrP0k/media/69299b4032bffb76e89a34e2.mp4"
+                  src="https://storage.googleapis.com/msgsndr/yE0ZTtTwqOwpiUubrP0k/media/696fe5a6d4fb9072c68e1ab2.mp4"
                   type="video/mp4"
                 />
                 {/* Fallback for browsers that don't support video */}
@@ -136,7 +136,7 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
                     className="rounded-2xl shadow-2xl w-full animate-float"
                   >
                     <source
-                      src="https://storage.googleapis.com/msgsndr/yE0ZTtTwqOwpiUubrP0k/media/69299b4032bffb76e89a34e2.mp4"
+                      src="https://storage.googleapis.com/msgsndr/yE0ZTtTwqOwpiUubrP0k/media/696fe5a6d4fb9072c68e1ab2.mp4"
                       type="video/mp4"
                     />
                     {/* Fallback for browsers that don't support video */}
